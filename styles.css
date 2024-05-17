@@ -5,6 +5,7 @@
     outline: 0;
 }
 
+
 body{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 243 243'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='franctalNoise' baseFrequency='3.3'%3E%3C/feTurbulence%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='10%25' filter='url(%23noiseFilter)' /%3E%3C/svg%3E");
     background-color: #121212;
@@ -21,7 +22,6 @@ body{
     align-items: center;
     justify-content: center;
     font-family: Helvetica, sans-serif;
-    font-size: 60px;
 }
 
 .main__container__wrapper {
@@ -32,14 +32,28 @@ place-items: center;
 
 .my__name {
     color: #f7f7f7;
-    width: 23.5ch;
-    animation: typing 2s steps(16), blink .5s step-end infinite alternate;
+    width: 18ch;
+    animation: typing 2s steps(17), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 3px solid;
+    border-right: 2px solid;
     font-family: Helvetica, sans-serif;
-    font-size: 3em;
+    font-size: max(30px, 3.0vw);
 }
+
+@media only screen and (max-width: 1440px){
+    .my__name{
+        font-size: max(50px, 1.5vw);
+        
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .my__name{
+        font-size: max(20px, 1.50vw);
+    }
+}
+
 @keyframes cursor{
     50%{ border-color: transparent }
 }
@@ -73,33 +87,73 @@ from {
     animation: typing 4.5s, blink .7s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 1.8em;
+    font-size: max(20px, 1.5vw);
+}
+
+@media only screen and (max-width: 1440px){
+    .subtitle{
+        font-size: max(30px, 1.5vw);
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .subtitle{
+        font-size: max(15px, 0.3vw);
+    }
 }
 /* fim do conteudo inicial */
 
 
 /* início do sobre mim */
-.about__title{
-    color: #f7f7f7;
-    font-family: Helvetica, sans-serif;
-    font-size: 25px;
-    padding-left: 60px;
-    padding-top: 400px;
+
+.about__container{
+    padding-top: 350px;
 }
 
-.about__desc{
-    color: #f7f7f7;
-    font-family: Helvetica, sans-serif;
-    font-size: 20px;
-    padding-left: 60px;
-    padding-top: 5px;
+.about__wrapper{
+    margin-top: 400px;
+    margin: 100px auto;
+    width: 75%;
 }
 
-.pfp__image{
-    height: 500px;
+.about__pfp{
+    max-width: 600px;
+    float: right;
+    margin-right: 20px;
 }
+
+.about__text h2{
+    font-size: 50px;
+    color: #f7f7f7;
+    font-family: Helvetica, sans-serif;
+}
+
+.about__text__p1{
+    padding-top: 7px;
+    font-size: max(20px, 1.0vw);
+    color: #f7f7f7;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    max-width: 1300px
+}
+
+.about__text__p2{
+    font-size: 22px;
+    color: #f7f7f7;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.about__tec__imgs img{
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 14px;
+}
+
+
+
+
 /* fim do sobre mim */
-
 
 /* início dos projetos */
 .projects__container{
@@ -108,7 +162,7 @@ from {
     justify-content: center;
     color: #f7f7f7;
     font-family: Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 40px;
     padding-top: 400px;
 }
 
@@ -121,10 +175,16 @@ from {
     margin-top: 10px;
 }
 
-.gallery-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.gallery-content img{
+    margin-top: 4px;
+    margin-left: 4px;
+    border-radius: 10px;
+    height: 350px;
+}
+
+#gallery{
     margin-top: 50px;
+    text-align: center;
+    width: 100%;
 }
 /* fim dos projetos */
