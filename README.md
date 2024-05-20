@@ -1,4 +1,4 @@
-## 👨‍💻 Meu portfoio | My portfolio
+## <p style="text-align: center;">👨‍💻 Meu portfoio | My portfolio</p>
 
 ![Imagem WhatsApp 20 Maio 2024](https://github.com/rafaelbpmt/personal-portfolio/assets/111367244/1e2116ac-935c-4590-b02c-49c6cd2b5d03)
 
