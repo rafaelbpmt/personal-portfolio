@@ -19,7 +19,7 @@
 - CSS3
 
 
-## Resultado final | Final result
+## 🏁 Resultado final | Final result
 
 🇧🇷 Você pode conferir meu portifolio [clicando aqui!](https://personal-portfolio-blue-mu.vercel.app/)
 
